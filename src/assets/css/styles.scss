@@ -33,7 +33,6 @@
         justify-content: space-between;
         white-space: nowrap;
         overflow: hidden;
-        text-overflow: hidden;
         margin: 0.5rem 0rem;
         font-size: 20px;
         background-color: white;
@@ -43,6 +42,26 @@
           display: flex;
           flex-direction: row;
           align-items: center;
+        }
+
+        .block--text--input {
+          border: none;
+          margin-left: 10px;
+          font-size: 20px;
+          width: 50ch;
+        }
+
+        .block--text--input:focus {
+          outline: none;
+        }
+
+        .strike-greyed {
+          text-decoration: line-through;
+          color: grey;
+        }
+
+        .editable:focus {
+          border: solid 1px black;
         }
 
         .icon {
